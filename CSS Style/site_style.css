@@ -1,7 +1,92 @@
 body
 {
 	margin: 0;
+	padding: 0;
+	height: 100%;
 	font-family: Tahoma;
+}
+
+#websiteWrap
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+	position: relative;
+}
+
+.bannerTop
+{
+	background: url(../images/banner.jpg);
+	background-size: cover;
+	text-align: center;
+}
+
+h1  /* This area changes Motorcycle Style in the banner */
+{
+	line-height: 75px;
+	color: #FFFFFF;
+	font-size: 45px;
+	margin: auto;
+}
+
+#motorcyclestyle
+{
+	width: 100%
+}
+
+#motorcyclestyle a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#motorcyclestyle ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	width: 100%;
+}
+
+#motorcyclestyle li
+{
+	display: block;
+	float: left;
+	width: 20%;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid #CCCCCC;
+	margin-right: 0;
+	margin-bottom: -1px;
+}
+
+#motorcyclestyle ul.pages
+{
+	height: 40px;
+	background: #333333;
+}
+
+#motorcyclestyle ul.pages li
+{
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 30px;
+	border: none !important;
+	padding: 5px 6px;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+#motorcyclestyle ul.pages a:hover
+{
+	color: #F4F142;		
+}
+
+#motorcyclestyle ul.pages a.active-page
+{
+	color: #F44242;
 }
 
 .month
@@ -120,6 +205,20 @@ h1
 	color: #666666;
 }
 
+.bannerBottom, .push
+{
+	height: 40px;					/* How tall the footer section is at the bottom of the apge */
+	width: 100%;					/* How far across the screen the footer goes */
+	background-color: #444444;		/* Color of the footer background */
+}
+
+.bannerBottom p
+{
+	text-align: center;
+	color: #F44242;
+	font-weight: bold;	
+	padding-top: 10px;		
+}
 @media(max-width: 768px)
 {
 	#calendar .weekdays, #calendar .other-month
