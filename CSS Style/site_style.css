@@ -1,0 +1,146 @@
+body
+{
+	margin: 0;
+	font-family: Tahoma;
+}
+
+.month
+{
+	background: url(../images/DecJanFebWinter.jpg);
+	background-size: cover;
+	text-align: center;
+}
+
+h1
+{
+	line-height: 100px;
+	color: #EDEDED;
+	font-size: 45px;
+	margin: auto;
+}
+
+#calendar
+{
+	width: 100%
+}
+
+#calendar a
+{
+	color: #666666;
+	text-decoration: none;
+}
+
+#calendar ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	width: 100%;
+}
+
+#calendar li
+{
+	display: block;
+	float: left;
+	width: 14.2857142857%;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid #CCCCCC;
+	margin-right: 0;
+	margin-bottom: -1px;
+}
+
+#calendar ul.weekdays
+{
+	height: 40px;
+	background: #333333;
+}
+
+#calendar ul.weekdays li
+{
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	border: none !important;
+	padding: 10px 6px;
+	color: #F1F442;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#calendar .days li
+{
+	height: 120px;
+}
+
+#calendar .days li:hover
+{
+	background: #EEEEEE;
+}
+
+#calendar .date
+{
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 5px;
+	background: #42ADF4;
+	color: #FFFFFF;
+	width: 25px;
+	border-radius: 50%;
+	float: right;
+}
+
+#calendar .event
+{
+	clear: both;
+	display: block;
+	font-size: 13px;
+	border-radius: 4px;
+	padding: 5px;
+	margin-bottom: 5px;
+	color: #666666;
+	line-height: 14px;
+	background: #E4F2F2;
+	border: 1px solid #B5DBDC;
+	color: #009AAF;
+	text-decoration: none;
+}
+
+#calendar .event-desc
+{
+	color: #666666;
+	margin: 3px 0 3px 0;
+	text-decoration: none;
+}
+
+#calendar .other-month
+{
+	background: #F5F5F5;
+	color: #666666;
+}
+
+@media(max-width: 768px)
+{
+	#calendar .weekdays, #calendar .other-month
+	{
+		display: none;
+	}
+	
+	#calendar li
+	{
+		height: auto !important;
+		border: 1px solid #EDEDED;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: -1px;
+	}
+	
+	#calendar .date
+	{
+		float: none;
+	}	
+}
+
+
+
